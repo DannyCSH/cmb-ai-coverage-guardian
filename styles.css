@@ -1130,19 +1130,12 @@ button {
   color: var(--ink);
 }
 
-.pain-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-}
-
 .flow-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
 }
 
-.pain-grid div,
 .flow-grid div {
   border-radius: 12px;
   background: #f8f9fc;
@@ -1150,48 +1143,12 @@ button {
   min-height: 126px;
 }
 
-.pain-grid b,
-.pain-grid span,
 .flow-grid i,
 .flow-grid b,
 .flow-grid span {
   display: block;
 }
 
-.pain-grid b {
-  color: var(--cmb-red-dark);
-  font-size: 15px;
-}
-
-.pain-grid.two-sided div {
-  min-height: 142px;
-}
-
-.pain-grid em {
-  display: inline-block;
-  margin-bottom: 8px;
-  padding: 4px 8px;
-  border-radius: 999px;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 12px;
-}
-
-.user-pain em {
-  color: var(--cmb-red-dark);
-  background: #fff2f3;
-}
-
-.manager-pain em {
-  color: #1d4ed8;
-  background: #eff6ff;
-}
-
-.manager-pain b {
-  color: #1d4ed8;
-}
-
-.pain-grid span,
 .flow-grid span {
   margin-top: 7px;
   color: var(--muted);
@@ -1215,6 +1172,93 @@ button {
 
 .flow-grid b {
   font-size: 15px;
+}
+
+.pain-board {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.pain-group {
+  border-radius: 14px;
+  padding: 14px;
+  background: #f8f9fc;
+  border: 1px solid rgba(24, 24, 27, 0.05);
+}
+
+.pain-group.user {
+  background: linear-gradient(135deg, #fff7f7, #f8f9fc 72%);
+}
+
+.pain-group.manager {
+  background: linear-gradient(135deg, #f3f7ff, #f8f9fc 72%);
+}
+
+.pain-group-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.pain-group-title span {
+  flex: 0 0 auto;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.pain-group.user .pain-group-title span {
+  color: var(--cmb-red-dark);
+  background: #fff2f3;
+}
+
+.pain-group.manager .pain-group-title span {
+  color: #1d4ed8;
+  background: #eff6ff;
+}
+
+.pain-group-title strong {
+  flex: 1;
+  text-align: right;
+  font-size: 15px;
+}
+
+.pain-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9px;
+}
+
+.pain-items div {
+  min-height: 86px;
+  border-radius: 11px;
+  padding: 11px;
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.pain-items b,
+.pain-items span {
+  display: block;
+}
+
+.pain-items b {
+  font-size: 15px;
+  color: var(--cmb-red-dark);
+}
+
+.pain-group.manager .pain-items b {
+  color: #1d4ed8;
+}
+
+.pain-items span {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 .capability-list {
