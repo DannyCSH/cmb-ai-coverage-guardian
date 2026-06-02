@@ -1163,6 +1163,34 @@ button {
   font-size: 15px;
 }
 
+.pain-grid.two-sided div {
+  min-height: 142px;
+}
+
+.pain-grid em {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+}
+
+.user-pain em {
+  color: var(--cmb-red-dark);
+  background: #fff2f3;
+}
+
+.manager-pain em {
+  color: #1d4ed8;
+  background: #eff6ff;
+}
+
+.manager-pain b {
+  color: #1d4ed8;
+}
+
 .pain-grid span,
 .flow-grid span {
   margin-top: 7px;
