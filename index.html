@@ -405,48 +405,53 @@
       </section>
 
       <aside class="demo-notes">
-        <div class="note-kicker">招商银行App内嵌式产品Demo</div>
+        <div class="note-kicker">招商银行App内嵌式保险AI Demo</div>
         <h2>AI保障管家</h2>
-        <p class="note-lead">用AI把“我该买什么保险”拆成可确认的保障档案、可解释的风险缺口和可落地的分层推荐路径。</p>
+        <p class="note-lead">把用户说不清的保障担忧，转成可确认的保障档案、可解释的风险缺口和可落地的分层推荐路径。</p>
 
         <div class="note-grid">
           <div class="note-card">
-            <strong>产品定位</strong>
-            <span>不是独立保险App，而是嵌入招行首页宫格、小招卡片和财富/保险频道的轻量保障规划入口。</span>
+            <strong>核心定位</strong>
+            <span>不是新建保险App，而是在招行App内补齐“需求理解 - 产品匹配 - 经理协同”的智能入口。</span>
           </div>
           <div class="note-card">
-            <strong>核心分流</strong>
-            <span>意外险、短期医疗险等标准品由AI解释后自助购买；寿险、重疾、年金等复杂品转客户经理复核。</span>
+            <strong>推荐边界</strong>
+            <span>标准品可自助，复杂品转经理，信息不足则追问或暂不推荐，避免AI越过合规边界。</span>
           </div>
         </div>
 
         <section class="note-section">
-          <h3>Demo讲解顺序</h3>
-          <ol class="demo-steps">
-            <li><b>首页入口：</b>在招行App高频宫格中点击“AI保障管家”，降低冷启动和跳转成本。</li>
-            <li><b>语音问诊：</b>用户直接说家庭、房贷、保单、预算，AI拆解成编号摘要并要求确认。</li>
-            <li><b>保障档案：</b>保单管家用OCR和条款RAG整理已有保单，形成可计算的保障底账。</li>
-            <li><b>缺口报告：</b>AI从家庭责任、健康风险、预算偏好推理寿险、重疾、医疗等短板。</li>
-            <li><b>推荐分流：</b>标准品自助、复杂品转经理、暂不推荐三条路径避免AI越过合规边界。</li>
-            <li><b>经理工作台：</b>AI生成客户画像、候选方案、推荐依据、异议话术和合规提示。</li>
-          </ol>
-        </section>
-
-        <section class="note-section">
-          <h3>AI能力链路</h3>
-          <div class="capability-list">
-            <div><b>ASR + NLU</b><span>理解语音中的家庭结构、房贷、预算、已有保障和真实顾虑。</span></div>
-            <div><b>文档理解</b><span>从保单图片/PDF中抽取险种、保额、期限、免责、续保等字段。</span></div>
-            <div><b>向量库 + 图谱</b><span>把用户需求语义与产品责任标签匹配，减少只按关键词推荐。</span></div>
-            <div><b>RAG + 规则引擎</b><span>条款解释基于真实条款检索，年龄、职业、健康告知等由规则硬校验。</span></div>
+          <h3>核心痛点（需求分析）</h3>
+          <div class="pain-grid">
+            <div><b>需求说不清</b><span>用户说的是房贷、孩子、父母和担忧，不会直接表达寿险、重疾、医疗等专业需求。</span></div>
+            <div><b>保单算不清</b><span>已有保单分散在不同渠道，用户难判断保什么、不保什么、是否重复或缺口。</span></div>
+            <div><b>产品选不准</b><span>保险品类多、条款复杂，预算有限时很难判断先买什么、哪些暂时不该买。</span></div>
+            <div><b>经理难说服</b><span>经理需要快速理解客户、匹配产品并解释依据，否则客户容易认为只是被推销。</span></div>
           </div>
         </section>
 
         <section class="note-section">
-          <h3>交互亮点</h3>
+          <h3>功能闭环（用户使用顺序）</h3>
+          <div class="flow-grid">
+            <div><i>01</i><b>App入口</b><span>从首页宫格、小招卡片或财富频道进入保障体检。</span></div>
+            <div><i>02</i><b>语音问诊</b><span>AI把用户原话拆成家庭、房贷、预算、已有保障等编号要点。</span></div>
+            <div><i>03</i><b>保单管家</b><span>OCR和条款RAG整理已有保单，形成可计算的保障档案。</span></div>
+            <div><i>04</i><b>缺口推理</b><span>从AI标签推理寿险、重疾、医疗、意外、养老等保障优先级。</span></div>
+            <div><i>05</i><b>推荐分流</b><span>标准品自助购买，复杂品生成报告转客户经理复核。</span></div>
+          </div>
+        </section>
+
+        <section class="note-section">
+          <h3>AI能力与落地边界</h3>
+          <div class="capability-list">
+            <div><b>NLU</b><span>把生活化表达转成家庭责任、健康担忧、预算敏感等标签。</span></div>
+            <div><b>RAG</b><span>基于保单和条款检索解释责任，减少模型凭空解读。</span></div>
+            <div><b>规则引擎</b><span>年龄、职业、健康告知、产品复杂度等硬规则先过滤。</span></div>
+            <div><b>人机协同</b><span>AI生成依据和话术，经理完成复杂产品复核与沟通。</span></div>
+          </div>
           <div class="highlight-box">
-            <strong>用户不用填长问卷，只要发一段语音。</strong>
-            <p>AI先把信息拆成1/2/3/4点，用户确认后再进入推荐，既提升体验，也降低AI误判带来的保险推荐风险。</p>
+            <strong>关键设计：先确认，再推荐。</strong>
+            <p>AI先把原话拆成可确认的保障档案，用户确认后再进入匹配；复杂产品不直接成交，而是转经理复核。</p>
           </div>
         </section>
       </aside>

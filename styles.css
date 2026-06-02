@@ -1130,6 +1130,65 @@ button {
   color: var(--ink);
 }
 
+.pain-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.pain-grid div,
+.flow-grid div {
+  border-radius: 12px;
+  background: #f8f9fc;
+  padding: 12px;
+  min-height: 126px;
+}
+
+.pain-grid b,
+.pain-grid span,
+.flow-grid i,
+.flow-grid b,
+.flow-grid span {
+  display: block;
+}
+
+.pain-grid b {
+  color: var(--cmb-red-dark);
+  font-size: 15px;
+}
+
+.pain-grid span,
+.flow-grid span {
+  margin-top: 7px;
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 14px;
+}
+
+.flow-grid i {
+  width: 34px;
+  height: 24px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 8px;
+  color: #fff;
+  background: var(--cmb-red);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+}
+
+.flow-grid b {
+  font-size: 15px;
+}
+
 .capability-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
